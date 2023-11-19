@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.mainContainer {
+  background: rgba(31, 32, 53, 255);
+  height: 100vh;
+  display: flex;
+}
+
+.img {
+  width: 30%;
+}
+
+.wrapper {
+  width: 800px;
+  min-height: 700px;
+  margin: auto;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 600;
+  color: rgba(31, 32, 53, 255);
+}
+
+h2 {
+  color: rgba(31, 32, 93, 255);
+}
+
+input {
+  margin: 3rem 0;
+  width: 300px;
+  padding: 8px;
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+button {
+  width: 250px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: rgba(31, 32, 53, 255);
+  border: 1px solid rgba(31, 32, 53, 255);
+  color: #fff;
+  font-size: 20px;
+  margin: 2rem 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+button:hover {
+  background-color: rgba(31, 32, 93, 255);
+}
+a {
+  padding: 1rem 2rem;
+  background-color: rgba(31, 32, 53, 255);
+  border: 1px solid rgba(31, 32, 53, 255);
+  color: #fff;
+  border-radius: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.3rem;
+  cursor: s-resize;
+}
+a:hover {
+  background-color: rgba(31, 32, 93, 255);
+}
+
+.copytxtcont {
+  overflow: hidden;
+  background-color: rgba(31, 32, 53, 255);
+  border-radius: 0.5rem;
+  padding: 0;
+  font-size: 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2rem 1.5rem;
+  color: whitesmoke;
+}
+
+.copy {
+  cursor: pointer;
+}
+.copybtn,
+.copybtn:hover {
+  outline: none;
+  border: none;
+  background-color: rgba(31, 32, 53, 255);
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  width: 1rem;
+}
+.inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media only screen and (max-width: 1100px) {
+  .mainContainer {
+    background-image: url('https://i.pinimg.com/originals/4b/8c/c3/4b8cc355274d29ebd1a2023624d3b57e.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+  }
+  .img {
+    display: none;
+  }
+  .wrapper {
+    width: 92vw;
+    max-height: 90vh;
+    background: rgba(255, 255, 255, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+  h1,
+  h2 {
+    text-align: center;
+    margin: 1rem 0;
+  }
+  .copytxtcont {
+    width: 86vw;
+  }
+}
