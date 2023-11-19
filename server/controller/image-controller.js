@@ -1,4 +1,5 @@
 const File = require('../model/file')
+
 const uploadImage = async (req, res) => {
   console.log(req)
   const fileObj = {
@@ -9,7 +10,7 @@ const uploadImage = async (req, res) => {
   try {
     const file = await File.create(fileObj)
     console.log('File saved in db')
-    res.status(200).json({ path: `http://localhost:8000/file/${file._id}` })
+    res.status(200).json({ path: `${process.env.BASE_URL}/file/${file._id}` })
   } catch (error) {
     console.log('Error in image controller, server error')
     res.status(500).json({ error: error.message })
